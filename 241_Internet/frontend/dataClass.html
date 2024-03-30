@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">
+        <span>ระบบบันทึกข้อมูลการศึกษา</span></a></li>
+      <li><a href="dataAll.html">
+        <span>ข้อมูลการศึกษา</span></a></li>
+      <li><a href="dataStudent.html">
+        <span>ข้อมูลนักศึกษา</span></a></li>
+      <li><a href="dataClass.html">
+        <span>ข้อมูลการเรียน</span></a></li>
+      <li><a href="dataTeacher.html">
+        <span>ข้อมูลการสอน</span></a></li>
+    </ul>
+  </div>
+  <div class="navdropbar">
+    <ul>
+      <li><a href="index.html">
+        <span>ระบบบันทึกข้อมูลการศึกษา</span></a></li>
+      <li class="dropbar">
+        <span class="droplist">
+          รายการข้อมูล
+          <i class="fa fa-caret-down"></i>
+        </span>
+        <div class="dropcontent">
+          <a href="dataAll.html"><span>ข้อมูลการศึกษา</span></a>
+          <a href="dataStudent.html"><span>ข้อมูลนักศึกษา</span></a>
+          <a href="dataClass.html"><span>ข้อมูลการเรียน</span></a>
+          <a href="dataTeacher.html"><span>ข้อมูลการสอน</span></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    <div class="container mg2">
+      <div class="title">
+        Education Management System
+        <br><p>ข้อมูลการเรียน</p>
+        <hr>
+      </div>
+      <div id="education"></div>
+    </div>
+    <footer>
+      <div class="center">
+        <div>© 2024 Education Management System.</div>
+        <div>จัดทำโดย นางสาวณัฐมน เหล่าพราหมณ์, 6521602004</div>
+      </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/5104e0691a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="data_class.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ส่วนที่ไม่แสดงออกไปในหน้าจอของ Browser -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--navbar-->
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">
+        <span>ระบบบันทึกข้อมูลการศึกษา</span></a></li>
+      <li><a href="data_all.html">
+        <span>ข้อมูลการศึกษา</span></a></li>
+      <li><a href="student.html">
+        <span>ข้อมูลนักศึกษา</span></a></li>
+      <li><a href="class.html">
+        <span>ข้อมูลการเรียน</span></a></li>
+      <li><a href="teacher.html">
+        <span>ข้อมูลการสอน</span></a></li>
+    </ul>
+  </div> 
+  <div class="navdropbar">
+    <ul>
+      <li><a href="index.html">
+        <span>ระบบบันทึกข้อมูลการศึกษา</span></a></li>
+      <li class="dropbar">
+        <span class="droplist">
+          รายการข้อมูล
+          <i class="fa fa-caret-down"></i>
+        </span>
+        <div class="dropcontent">
+          <a href="data_all.html"><span>ข้อมูลการศึกษา</span></a>
+          <a href="student.html"><span>ข้อมูลนักศึกษา</span></a>
+          <a href="class.html"><span>ข้อมูลการเรียน</span></a>
+          <a href="teacher.html"><span>ข้อมูลการสอน</span></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+  <div class="title mg">
+    ระบบบันทึกข้อมูลการศึกษา
+    <br><p>Education Management System</p>
+    <br><hr>
+  </div>
+  <section class="mg">
+    <!--ข้อมูลนักเรียน/นักศึกษา(ชื่อ,อายุ,ที่อยู่,ระดับการศึกษา)-->
+    <div class="headsection">
+      <i class="fa-solid fa-hashtag fa-2xs"></i>
+      ข้อมูลนักเรียน/นักศึกษา
+    </div>
+    <div class="subsection">
+      <div class="grid2-content">
+        <div>
+          <span>ชื่อ</span><input class="form" name="fname" type="text">
+        </div>
+        <div>
+          <span>นามสกุล </span><br>
+          <input class="form" name="lname" type="text">
+        </div>
+      </div>
+      <div class="grid2-content">
+        <div>
+          <span>อายุ </span><br>
+          <input class="form" name="age" type="number" min="0" max="100">
+        </div>
+        <div>
+          <span>ระดับการศึกษา </span><br>
+          <select class="option" name="degree">
+            <option type="radio" value="ต่ำกว่าประถมศึกษา"> ต่ำกว่าประถมศึกษา</option>
+            <option type="radio" value="ประถมศึกษาตอนต้น"> ประถมศึกษาตอนต้น</option>
+            <option type="radio" value="ประถมศึกษาตอนปลาย"> ประถมศึกษาตอนปลาย</option>
+            <option type="radio" value="มัธยมศึกษาตอนต้น"> มัธยมศึกษาตอนต้น</option>
+            <option type="radio" value="มัธยมศึกษาตอนปลาย"> มัธยมศึกษาตอนปลาย</option>
+            <option type="radio" value="ปริญญาตรี"> ปริญญาตรี</option>
+            <option type="radio" value="สูงกว่าปริญญาตรี"> สูงกว่าปริญญาตรี</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <span>ที่อยู่ </span><br>
+        <textarea name="address" type="text"></textarea>
+      </div>
+      
+    </div>
+    <!--ข้อมูลการเรียน(วิชาที่เรียน,ผลการเรียน,กิจกรรมเสริมการเรียน)-->
+    <div class="headsection">
+      <i class="fa-solid fa-hashtag fa-2xs"></i>
+      ข้อมูลการเรียน
+    </div>
+    <div class="subsection">
+      <div>
+        <span>วิชาที่เรียน </span><br>
+        <input class="form" name="class" type="text">
+      </div>
+      <div>
+        <span class="">ผลการเรียน </span><br>
+        <input class="form" name="grade" type="number" min="0.00" max="4.00" step="0.01">
+      </div>
+      <div>
+        <span>กิจกรรมเสริมการเรียน </span><br>
+        <textarea name="activity" type="text"></textarea>
+      </div>
+    </div>
+    <!--ข้อมูลการสอน(ชื่อครู,อาจารย์,วิชาที่สอน,เวลาเรียน)-->
+    <div class="headsection">
+      <i class="fa-solid fa-hashtag fa-2xs"></i>
+      ข้อมูลการสอน
+    </div>
+    <div class="subsection">
+      <div class="grid2-content">
+        <div>
+          <span>ชื่อ</span><br>
+          <input class="form" name="teacherfname" type="text">
+        </div>
+        <div>
+          <span>นามสกุล </span><br>
+          <input class="form" name="teacherlname" type="text">
+        </div>
+      </div>
+      <div>
+        <span>วิชาที่สอน </span><br>
+        <input class="form" name="course" type="text">
+      </div>
+      <!--เวลาเรียน-->
+      <div class="flex3-content">
+        <div>
+          <span>วันที่เรียน</span><br>
+          <select class="option" name="day">
+            <option type="radio" value="จันทร์">จันทร์</option>
+            <option type="radio" value="อังคาร">อังคาร</option>
+            <option type="radio" value="พุธ">พุธ</option>
+            <option type="radio" value="พฤหัสบดี">พฤหัสบดี</option>
+            <option type="radio" value="ศุกร์">ศุกร์</option>
+            <option type="radio" value="เสาร์">เสาร์</option>
+            <option type="radio" value="อาทิตย์">อาทิตย์</option>
+          </select>
+        </div>
+        <div>
+          <span>เวลาเริ่มเรียน </span><br>
+          <input class="form" name="timestart" type="time" min="08:00" max="16:00">
+        </div>
+        <div>
+          <span>เวลาเลิกเรียน </span><br>
+          <input class="form" name="timeend" type="time" min="08:00" max="16:00">
+        </div>
+    </div>
+    </div>
+    <!--validate-->
+    <div id="message" class="message"></div>
+    <!--submit btn-->
+    <div class="center">
+      <button class="button" onclick="submitData()">บันทึกข้อมูล</button>
+    </div>
+  </section>
+  </div>
+  <!--footer-->
+  <footer>
+    <div class="center">
+      <div>© 2024 Education Management System.</div>
+      <div>จัดทำโดย นางสาวณัฐมน เหล่าพราหมณ์, 6521602004</div>
+    </div>
+  </footer>
+
+<script src="https://kit.fontawesome.com/5104e0691a.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
